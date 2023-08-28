@@ -96,12 +96,12 @@ body{
     margin: auto;
     justify-content: space-around;
 }
-.main_index h1{
+h1{
     padding: 20px;
     font-size: xx-large;
 }
 
-.main_index h3{
+h3{
     background-color: #F8D7DA;
     padding: 20px;
     text-align: left;
