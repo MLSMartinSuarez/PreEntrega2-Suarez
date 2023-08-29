@@ -116,7 +116,7 @@ body{
 
 }
 
-.main_index{
+.main{
     display: flex;
     background-color: rgb(255, 255, 255);
     max-width: 800px;
@@ -136,7 +136,7 @@ h3{
     font-weight: bolder;
 }
 
-.main_index a{
+.main a{
     color: #94666a;
     text-decoration: none;
     font-weight: bolder;
@@ -175,17 +175,13 @@ h3{
 .habilidades_txt{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin: 15px;
 }
-
-
-.main_galeria{
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    max-width: 800px;
-    text-align: center;
-    margin: auto;
-    justify-content: space-around;
+.habilidades_txt img{
+    width: 300px;
+    margin: 20px;
 }
 
 .img_grid {  
@@ -270,6 +266,52 @@ h3{
         background-color: #F8D7DA;
         box-sizing: border-box;
        }
+
+    .main_personajes{
+        display: flex;
+        background-color: #F8D7DA;
+        max-width: 800px;
+        text-align: center;
+        margin: auto;
+        justify-content: space-around;
+    }
+
+    .main_personajes h1{
+
+    }
+    .main_personajes h2{
+        
+    }
+    .main_personajes h6{
+
+    }
+
+    .main_personajes .pj_kirby{
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        border: 1px solid black;
+
+    }
+
+    .main_personajes .pj_kirby img{
+        width: 150px;
+    }
+
+    .main_personajes .pj_tiff{
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        border: 1px solid black;
+    }
+
+    .main_personajes .pj_tuff{
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        border: 1px solid black;
+    }
+
 
    
   
