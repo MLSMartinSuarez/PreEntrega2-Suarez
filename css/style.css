@@ -32,8 +32,36 @@ body{
     font-weight: bolder;
     display: block;
     position: relative;
-    padding: 25px 0 25px 25px;
+    padding: 25px 0px 25px 25px;
 }
+
+.nav_sidebar_galeria ul a{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    display: block;
+    position: relative;
+    padding: 25px 0px 25px 0px;
+}
+
+.nav_sidebar_galeria ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    list-style-type: none;
+    height: 100%;
+    width: 160px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: #b67c80;
+}
+
+.nav_sidebar_galeria img{
+    width: 30px;
+}
+
 
 .nav_normal ul{
     display: flex;
@@ -135,6 +163,22 @@ h3{
     width: 150px;
 }
 
+.personalidad_txt {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+.personalidad_txt img{
+    width: 150px;
+}
+
+.habilidades_txt{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+
 .main_galeria{
     display: flex;
     background-color: rgb(255, 255, 255);
@@ -145,7 +189,7 @@ h3{
 }
 
 .img_grid {  
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 240px 240px 160px 160px; 
     grid-template-rows: 180px 460px 272px 144px; 
@@ -160,6 +204,7 @@ h3{
   }
   .img_grid div{
     border: 5px solid #F8D7DA;
+    background-color: #F8D7DA;
   }
     .img-1 { grid-area: img-1;}
     .img-2 { grid-area: img-2; }
@@ -183,6 +228,49 @@ h3{
     background-color: #F8D7DA;
     box-sizing: border-box;
    }
+
+   .main_galeria2{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    justify-content: space-around;
+    background-color: #F8D7DA;
+   }
+
+   .img_grid2{
+    /* border: 2px solid black; */
+    background-color: #F8D7DA;
+      display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: 230px 220px 300px 200px;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: 
+        "img-11 img-11 img-12 img-12"
+        "img-13 img-13 img-12 img-12"
+        "img-15 img-15 img-15 img-15"
+        "img-15 img-15 img-15 img-15"; 
+    }
+    .img-11 { grid-area: img-11; }
+
+    .img-12 { grid-area: img-12; }
+    .img-15 { grid-area: img-15; }
+    .img-13 { 
+        grid-area: img-13; 
+        width: 400px;
+    }
+      
+      .img_grid2 img{
+        max-width: 100%;
+        border-radius: 20px;
+        border: 0px;
+        background-color: #F8D7DA;
+        box-sizing: border-box;
+       }
+
    
   
   
