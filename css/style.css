@@ -274,13 +274,19 @@ h3{
         text-align: center;
         margin: auto;
         justify-content: space-around;
+        flex-direction: column;
     }
 
     .main_personajes h1{
+        border: 5px solid black;
+        margin-bottom: 20px;
 
     }
     .main_personajes h2{
-        
+        font-style: italic;
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
     }
     .main_personajes h6{
 
@@ -305,12 +311,90 @@ h3{
         border: 1px solid black;
     }
 
+    .main_personajes .pj_tiff img {
+        width: 150px;
+    }
+
     .main_personajes .pj_tuff{
         display: flex;
         align-items: center;
         margin: 15px;
         border: 1px solid black;
     }
+    .main_personajes .pj_tuff img {
+        width: 150px;
+    }
+
+    .main_personajes .pj_reydedede{
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        border: 1px solid black;
+    }
+
+    .main_personajes .pj_reydedede img{
+        width: 150px;
+    }
+
+    .main_personajes .pj_scargoon{
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        border: 1px solid black;
+    }
+
+    .main_personajes .pj_scargoon img{
+        width: 150px;
+    }
+
+    .main_personajes .pj_nightmare{
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        border: 1px solid black;
+    }
+
+    .main_personajes .pj_nightmare img{
+        width: 250px;
+    }
+
+    .main_personajes .pj_metaknight{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 15px;
+        border: 1px solid black;
+    }
+
+    .main_personajes .pj_metaknight img{
+        width: 250px;
+    }
+
+    .main_personajes .gif_escena{
+        border-radius: 20px;
+        border: 5px solid black;
+        width: 320px;
+        margin: 30px;
+    }
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
    
