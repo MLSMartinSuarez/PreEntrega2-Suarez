@@ -40,11 +40,17 @@ body{
 .nav_normal ul{
     display: flex;
     justify-content: space-evenly;
-    margin: 0px 300px;
+    margin: 0px 400px;
     padding: 30px;
     color: rgb(0, 0, 0);
     list-style-type: none;
     font-weight: bolder;
+    text-align:center;
+}
+
+.nav_normal ul li{
+    margin: 10px;
+    padding: 10px;
 }
 .nav_sidebar ul a li:hover{
     color: rgb(255, 255, 0);
@@ -133,7 +139,10 @@ h3{
     color: #94666a;
     text-decoration: none;
     font-weight: bolder;
-    text-decoration: underline;
+}
+
+.main a:hover{
+    color: #c5c556;
 }
 
 .main p{
@@ -152,7 +161,6 @@ h3{
     display: flex;
     flex-direction: column;
     border: 2px solid #b67c80;
-    height: 500px;
     justify-content: space-evenly;
     padding: 20px;
     
@@ -162,7 +170,6 @@ h3{
     display: flex;
     align-items: center;
     border: 2px solid #b67c80;
-    height: 300px;
     padding: 10px;
 }
 .apariencia_txt img{
@@ -174,7 +181,6 @@ h3{
     display: flex;
     align-items: center;
     border: 2px solid #b67c80;
-    height: 400px;
     padding: 20px;
 }
 .personalidad_txt img{
@@ -202,6 +208,10 @@ h3{
     text-align: center;
     margin: auto;
     justify-content: space-around;
+}
+
+body {
+    line-height: var(--bs-body-line-height) 0;
 }
 
 .img_grid {  
@@ -300,17 +310,23 @@ h3{
         display: flex;
         justify-content: center;
         box-shadow: 0px -4px 0px 0px #b67c80;
+        margin-top: 50px;
         
     }
 
     .main_personajes .pj_kirby{
-        display: flex;
+        /* display: flex;
         align-items: center;
         flex-wrap: wrap;
         flex-direction: column;
          margin: 20px; 
          letter-spacing: 1px; 
-         height: 300px; 
+         height: 300px;  */
+         display: flex;
+        align-items: center;
+        margin: 50px;
+        flex-direction: column;
+        letter-spacing: 1px;
     }
 
     .main_personajes .pj_kirby img{
@@ -445,10 +461,29 @@ h3{
         
     }
 
+    .main_contacto section form{
+        height: 500px;
+    }
+
+    .main_contacto .form{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .main_contacto .comentario{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
     footer{
         background-color: rgb(48, 27, 48);
         height: 450px;
         margin-top: 50px;
+        max-width: 1200px;
+        margin-left: 180px;
     }
     footer .footer_appstore{
         height: 150px;
@@ -479,19 +514,98 @@ h3{
        }
 
     footer .footer_redes img{
-         width: 50px;
+         width: 70px;
     }
 
     footer .copyright{
-        height: 180px;
-        max-width: 1100px;
-        margin-left: 200px;
+        margin: 30px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         color: white;
         text-align: center;
         }
+
+        @media (max-width:884px){
+            .nav_sidebar {
+                display: none;
+
+            }
+            .main{
+                max-width: 1000px;
+                margin: 30px;
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
+            }
+
+            .habilidades_txt img{
+                width: 100px;
+            }
+
+            .intro_txt{
+                flex-direction: column-reverse;
+                
+            }
+            .origen_txt{
+                flex-direction: column-reverse;
+                
+            }
+            
+            .apariencia_txt{
+                flex-direction: column-reverse;
+
+            }
+
+            .personalidad_txt {
+                flex-direction: column-reverse;
+            }
+
+            .nav_normal ul{
+                
+                margin: 0px auto;
+                
+            }
+
+            footer{
+                
+                margin-left: 0px;
+            }
+        }
+
+        @media (max-width:512px){
+
+            .nav_normal ul{
+                flex-direction: column;
+            }
+
+            body{
+                background-color: white;
+            }
+
+            h3{
+                background-color: white;
+            }
+
+            footer .footer_appstore{
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer .footer_appstore img{
+                width: 100px;
+            }
+
+            .habilidades_txt img{
+                display: none;
+            }
+
+            .main_contacto{
+                background-color: white;
+            }
+
+        }
+
+
 
 
 
