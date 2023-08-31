@@ -62,7 +62,6 @@ body{
     width: 30px;
 }
 
-
 .nav_normal ul{
     display: flex;
     justify-content: space-evenly;
@@ -113,7 +112,6 @@ body{
     width: 218px;
     display: flex;
     margin: auto;
-
 }
 
 .main{
@@ -121,14 +119,12 @@ body{
     background-color: rgb(255, 255, 255);
     max-width: 900px;
     margin-left: 240px;
-    /* text-align: center; */
-    /* margin: auto; */
     justify-content: space-around;
 }
 .main h1{
     padding: 20px;
     font-size: xx-large;
-    border: 5px solid #b67c80;
+    border: 2px solid #b67c80;
     text-align: center;
         
 }
@@ -150,22 +146,19 @@ h3{
 
 .main p{
     letter-spacing: 1px;
-    /* height: 300px; */
 }
 
 .intro_txt{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    /* margin: 10px; */
-    border: 5px solid #b67c80;  
+    border: 2px solid #b67c80;  
     padding: 20px; 
 }
 .origen_txt{
-    /* margin: 10px; */
     display: flex;
     flex-direction: column;
-    border: 5px solid #b67c80;
+    border: 2px solid #b67c80;
     height: 500px;
     justify-content: space-evenly;
     padding: 20px;
@@ -175,8 +168,7 @@ h3{
 .apariencia_txt{
     display: flex;
     align-items: center;
-    /* margin: 15px; */
-    border: 5px solid #b67c80;
+    border: 2px solid #b67c80;
     height: 300px;
     padding: 10px;
 }
@@ -188,8 +180,7 @@ h3{
 .personalidad_txt {
     display: flex;
     align-items: center;
-    /* margin: 15px; */
-    border: 5px solid #b67c80;
+    border: 2px solid #b67c80;
     height: 400px;
     padding: 20px;
 }
@@ -202,14 +193,12 @@ h3{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* margin: 15px; */
-    border: 5px solid #b67c80;
+    border: 2px solid #b67c80;
     height: 500px;
     padding: 15px;
 }
 .habilidades_txt img{
     width: 200px;
-    /* margin: 10px; */
 }
 
 .main_galeria{
@@ -223,7 +212,6 @@ h3{
 }
 
 .img_grid {  
-    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 240px 240px 160px 160px; 
     grid-template-rows: 180px 460px 272px 144px; 
@@ -285,7 +273,7 @@ h3{
     }
     .img-11 { grid-area: img-11; }
     .img-12 { grid-area: img-12; }
-    .img-15 { grid-area: img-15; }
+    .img-15 { grid-area: img-15; margin-bottom: 200px;}
     .img-13 { grid-area: img-13; width: 400px;}
       
       .img_grid2 img{
@@ -294,6 +282,7 @@ h3{
         border: 0px;
         background-color: #F8D7DA;
         box-sizing: border-box;
+        
        }
 
     .main_personajes{
@@ -319,9 +308,6 @@ h3{
         justify-content: center;
         box-shadow: 0px -4px 0px 0px #b67c80;
         
-    }
-    .main_personajes h6{
-
     }
 
     .main_personajes .pj_kirby{
@@ -421,6 +407,88 @@ h3{
         border: 2px solid #b67c80;
         width: 320px;
         margin: 30px;
+    }
+
+    .main_store{
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        max-width: 1000px;
+        margin-left: 240px;
+        justify-content: space-around;
+    }
+
+    .main_store2{
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        max-width: 1000px;
+        margin-left: 240px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .main_store2 h1{
+        padding: 20px;
+        font-size: xx-large;
+        text-align: center;
+        background-color: #F8D7DA;
+    }
+
+    .main_store2 h3{
+        padding: 20px;
+        font-size: xx-large;
+        text-align: center;
+        border: 2px solid white
+    }
+
+    footer{
+        background-color: rgb(48, 27, 48);
+        height: 450px;
+        margin-top: 50px;
+    }
+    footer .footer_appstore{
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .footer_appstore img{
+        width: 150px;
+    }
+
+    footer .Siguenos{
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+    }
+
+ 
+
+    footer .footer_redes{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+       }
+
+    footer .footer_redes img{
+         width: 50px;
+    }
+
+    footer .copyright{
+        height: 180px;
+        max-width: 1100px;
+        margin-left: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        color: white;
+        text-align: center;
+        border: 2px solid black;
+        
+        
     }
 
 
