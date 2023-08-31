@@ -11,19 +11,21 @@ body{
 .nav_sidebar ul{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: space-between;
     list-style-type: none;
     height: 100%;
-    width: 160px;
+    width: 190px;
     position:fixed;
     top: 0;
     left: 0;
     background-color: #b67c80;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-left: 2px;
 }
 
-.nav_sidebar img{
-    width: 30px;
+.nav_sidebar .logo_sidebar{
+    width: 180px;
 }
 
 .nav_sidebar ul a{
@@ -33,34 +35,7 @@ body{
     display: block;
     position: relative;
     padding: 25px 0px 25px 25px;
-}
-
-.nav_sidebar_galeria ul a{
-    color: black;
-    text-decoration: none;
-    font-weight: bolder;
-    display: block;
-    position: relative;
-    padding: 25px 0px 25px 0px;
-}
-
-.nav_sidebar_galeria ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    list-style-type: none;
-    height: 100%;
-    width: 160px;
-    position:fixed;
-    top: 0;
-    left: 0;
-    background-color: #b67c80;
-}
-
-.nav_sidebar_galeria img{
-    width: 30px;
-}
+    }
 
 .nav_normal ul{
     display: flex;
@@ -70,6 +45,13 @@ body{
     color: rgb(0, 0, 0);
     list-style-type: none;
     font-weight: bolder;
+}
+.nav_sidebar ul a li:hover{
+    color: rgb(255, 255, 0);
+}
+
+.nav_sidebar ul a li:active{
+    color: rgb(255, 255, 115);
 }
 
 .nav_normal .inicio{
@@ -108,10 +90,20 @@ body{
     font-weight: bolder;
 }
 
+.nav_normal ul a li:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.nav_normal ul a li:active{
+    background-color: rgb(255, 255, 115);
+    color: black;
+}
 .logo{
-    width: 218px;
+    width: 300px;
     display: flex;
     margin: auto;
+    margin-top: 20px;
 }
 
 .main{
@@ -154,6 +146,7 @@ h3{
     align-items: center;
     border: 2px solid #b67c80;  
     padding: 20px; 
+    
 }
 .origen_txt{
     display: flex;
@@ -441,6 +434,17 @@ h3{
         border: 2px solid white
     }
 
+    .main_contacto{
+        display: flex;
+        background-color: #F8D7DA;
+        max-width: 950px;
+        text-align: center;
+        margin: auto;
+        justify-content: space-around;
+        flex-direction: column;
+        
+    }
+
     footer{
         background-color: rgb(48, 27, 48);
         height: 450px;
@@ -487,10 +491,7 @@ h3{
         align-items: center;
         color: white;
         text-align: center;
-        border: 2px solid black;
-        
-        
-    }
+        }
 
 
 
