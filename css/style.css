@@ -315,14 +315,8 @@ body {
     }
 
     .main_personajes .pj_kirby{
-        /* display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-         margin: 20px; 
-         letter-spacing: 1px; 
-         height: 300px;  */
-         display: flex;
+        
+        display: flex;
         align-items: center;
         margin: 50px;
         flex-direction: column;
